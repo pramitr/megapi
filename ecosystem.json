@@ -1,0 +1,20 @@
+{
+    "apps" : [{
+        "name"        : "Web Server",
+        "script"      : "server.js",
+        "env": {
+            "NODE_ENV": "production"
+        }
+    }],
+	"deploy" : {
+		"production" : {
+			"user" : "pi",
+			"host" : "<your-domain>.ddns.net",
+			"port" : "<your-router-port>",
+			"ref"  : "origin/master",
+			"repo" : "<your-github-repo>",
+			"path" : "/var/www/web-server",
+			"post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+		}
+	}
+}
