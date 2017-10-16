@@ -1,47 +1,14 @@
-# Raspberry Pi Express Web Server
-This is how I built a home web server with a Raspberry Pi, Node JS, and an Express Server.
+# Control simple Arm Tank robot built with Megapi and Raspberry Pi
+	This tutorial is to setup the server for the customized arm tank robot I have developped
 
-## Purchases
-
-1. [Raspberry Pi B+](http://amzn.com/B00LPESRUK)
-2. [Power Supply](http://amzn.com/B00GWDLJGS)
-3. [Micro SD Card](http://amzn.com/B00DYQYLQQ) (At least 8 GB)
-4. [Case](http://amzn.com/B00MQLB1N6) (Optional)
-
-![Rasberry Pi](https://www.dropbox.com/s/euujwu3nowunjtk/raspberry-pi.jpg?dl=1)
-
-## Hardware
-
-1. Raspberry Pi B+
-2. Power Supply for Raspberry Pi
-3. Modem and Router
-4. Ethernet Cord
-
-## Setup
-
-1. Install the operating system by following [these steps](https://www.raspberrypi.org/help/noobs-setup/)
-2. Once the operating system is installed, from the command line update the software to the latest.
-
-		$ sudo apt-get update; sudo apt-get upgrade
-4. If wanted, change the default `pi` user password to something more secure.
-
-		$ sudo raspi-config
-6. Navigate to `2 Change User Password` and follow the steps.
-
-## Install latest NodeJS
-
-	$ wget http://node-arm.herokuapp.com/node_latest_armhf.deb
-	$ sudo dpkg -i node_latest_armhf.deb
-	$ node -v
+## Install latest NodeJS for ARM processor
+	[node-arm]http://node-arm.herokuapp.com/
 
 ## Install Git and fork this repo
 
 	$ sudo apt-get install git
 	
-Fork [this](https://github.com/sean-hill/raspberry-pi-web-server.git) repo so that you can commit your own updates later on, then clone your repo to your Pi.
-
-	$ cd ~/
-	$ git clone <your-forked-url>
+Fork [this](https://github.com/pramitr/megapi.git) 
 	
 ## Run the Webserver
 	$ cd ~/raspberry-pi-web-server
@@ -50,7 +17,13 @@ Fork [this](https://github.com/sean-hill/raspberry-pi-web-server.git) repo so th
 	
 Open a browser and go to `<your-pi's-IP>:5000`
 
-You did it! You successfully ran a webserver on your Raspberry Pi. Now what? How about we open up your router to the outside world and setup a deployment method.
+You did it! You successfully ran a webserver on your Raspberry Pi. This is a proof of concept code to control the robot from home network or even external network (for that you need to do port forwarding from your home router, given a generic step below).
+Now you can modify the MegaPi code to make it customize your control, add more sofisticated prgrams like use image clssifier to undertand object and pickup, move object to specified location, autonomous movement etc.
+
+
+## Optional and additional steps
+
+Now what? How about we open up your router to the outside world and setup a deployment method.
 
 ## Dynamic DNS
 
@@ -89,7 +62,7 @@ Well, you've done it, you can successfully view a webpage hosted on your raspber
 
 ### PM2
 
-I ❤️ [pm2](https://github.com/Unitech/pm2). It's a great module to deploy your nodejs applications. First let's install it on both your computer and your raspberry pi.
+[pm2](https://github.com/Unitech/pm2) is a great module to deploy your nodejs applications. First let's install it on both your computer and your raspberry pi.
 
 	$ sudo npm install -g pm2
 	
@@ -141,11 +114,6 @@ You should see your app running and be able to access your server from your brow
 	│ Web Server │ 0 │ fork │ 10488 │ online │ 7 │ 6m │ 22.156 MB │ disabled │
 	
 Now every time you make changes to your server, commit the changes, push them up, and then deploy your app using pm2. You never have to SSH into your Raspberry Pi.
-
-## Conclusion
-
-This is a bit of tedious process, but you just set up your own personal web server for less then 50 bucks. Pretty sweet! Good luck and let me know if this process could be improved!
-
 
 
 
