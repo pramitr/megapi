@@ -1,4 +1,4 @@
-# Control simple Arm Tank robot built with Megapi and Raspberry Pi
+# Control Armed Tank robot built with Megapi and Raspberry Pi
 This tutorial is to setup the server for the customized arm tank robot I have developped
 It requires Raspberry Pi  (I use 3B), Arduino (I have used MegaPi), 4 encoder motors, motor drivers.
 For robotic arm I have used one robotic arm from Makeblock which has one simple DC motor, also I have used Me Ultrasonic sensor and Raspberry Pi camera module (camera module code not ready yet in this repo).
