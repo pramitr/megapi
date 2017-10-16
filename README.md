@@ -1,15 +1,21 @@
 # Control Armed Tank robot built with Megapi and Raspberry Pi
-This tutorial is to setup the server for the customized arm tank robot I have developped
+This tutorial is to setup the server for the customized arm tank robot I have developped. 
+
+## Project Goal
+I am using NodeJS server with MegaPi NodeJS API because I want to make a smart and intelligent robot with specific simple household task completion as focus, like cleaning up house by say picking up garbage and put in trash, do laundy, water the plants etc. oh and of course everyone's favorite fetch a beer! This project will continue as a hobby for long time to come, so I need software iteration possible with capability to run complex algorithms. For this I am using Raspberry Pi and Arduino combination. In future I might be using Rpi just as a smart relay between Arduino and some central command server, who knows.
+
+## Setup process
+
 It requires Raspberry Pi  (I use 3B), Arduino (I have used MegaPi), 4 encoder motors, motor drivers.
 For robotic arm I have used one robotic arm from Makeblock which has one simple DC motor, also I have used Me Ultrasonic sensor and Raspberry Pi camera module (camera module code not ready yet in this repo).
 
 If you are familiar with Arduino, thats great! If not, it comes with variety of features to learn about. So let me know what your project interest is and I can give you appropriate guiding links.
-Once everything is hardwired (there can be questions over connecting staff, feel free to ask, I have used MegaPi USB port to connect to RPi because I wanted to use the bluetooth and data at the same time, besides Im not a fan of soldering myself so no serial port yet, if I find it required to do, I will update here), below is the programming part with software.
+Once everything is hardwired (there can be questions over connecting staff, feel free to ask, I have used MegaPi USB port to connect to RPi because I wanted to use the bluetooth and data at the same time, besides Im not a fan of soldering myself so no serial port yet, if I find it required to do, I will update here), below is the programming part with software in Raspberry Pi.
 
-## Install latest NodeJS for ARM processor
+### Install latest NodeJS for ARM processor
 [node-arm](http://node-arm.herokuapp.com/)
 
-## Install Megapi npm package
+### Install Megapi npm package
 	npm install megapi
 Insert the initial code for starting MegaPi first.
 
@@ -26,13 +32,13 @@ Insert the initial code for starting MegaPi first.
   		setTimeout(loop,500);
 	}
 
-## Install Git and fork this repo
+### Install Git and fork this repo
 
 	$ sudo apt-get install git
 	
 Fork [this](https://github.com/pramitr/megapi.git) 
 	
-## Run the Webserver
+### Run the Webserver
 	$ cd ~/raspberry-pi-web-server
 	$ npm install
 	$ node server.js
@@ -43,7 +49,7 @@ You did it! You successfully ran a webserver on your Raspberry Pi. The server cr
  This is a proof of concept code. Now you can modify the MegaPi code to customize your control or add more sofisticated prgrams like use image clssifier to undertand object and pickup, move object to specified location, autonomous movement etc.
 
 
-## Other optional and additional steps you might like
+### Other optional and additional steps you might like
 Please go [here to Sean Hill](https://github.com/sean-hill/raspberry-pi-web-server) for some other additional steps for development and to make your raspberry Pi server accessible to external world. I have used his code for the project packaging and logistics.
 
 
