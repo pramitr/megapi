@@ -1,8 +1,10 @@
-# Control Armed Tank robot built with Megapi and Raspberry Pi
+# Control a simple robot built with Megapi and Raspberry Pi
 This tutorial is to setup the server for the customized arm tank robot I have developped. 
 
 ## Project Goal
 I am using NodeJS server with MegaPi NodeJS API because I want to make a smart and intelligent robot with specific simple household task completion as focus, like cleaning up house by say picking up garbage and put in trash, do laundy, water the plants etc. oh and of course everyone's favorite fetch a beer! This project will continue as a hobby for long time to come, so I need software iteration possible with capability to run complex algorithms. For this I am using Raspberry Pi and Arduino combination. In future I might be using Rpi just as a smart relay between Arduino and some central command server, who knows.
+
+Currently my robot has a simple and not so accurate arm with 3 DOF, 4 wheels to move forward and backward and turn, one ultrasonic sensor to avoid object, (a camera to stream to server for remote control) and (a line follower module that detects white and black lines).
 
 ## Setup process
 
