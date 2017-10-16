@@ -1,5 +1,5 @@
 # Control simple Arm Tank robot built with Megapi and Raspberry Pi
-	This tutorial is to setup the server for the customized arm tank robot I have developped
+This tutorial is to setup the server for the customized arm tank robot I have developped
 
 ## Install latest NodeJS for ARM processor
 [node-arm](http://node-arm.herokuapp.com/)
