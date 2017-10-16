@@ -22,7 +22,7 @@ You did it! You successfully ran a webserver on your Raspberry Pi. The server cr
 
 
 ## Other optional and additional steps you might like
-Please go here for some other steps to make your raspberry Pi server accessible to external world [Sean Hill](https://github.com/sean-hill/raspberry-pi-web-server)
+Please go [here to Sean Hill](https://github.com/sean-hill/raspberry-pi-web-server) for some other additional steps for development and to make your raspberry Pi server accessible to external world.
 
 
 
