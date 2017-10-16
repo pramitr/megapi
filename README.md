@@ -2,7 +2,7 @@
 	This tutorial is to setup the server for the customized arm tank robot I have developped
 
 ## Install latest NodeJS for ARM processor
-	[node-arm](http://node-arm.herokuapp.com/)
+[node-arm](http://node-arm.herokuapp.com/)
 
 ## Install Git and fork this repo
 
