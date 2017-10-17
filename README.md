@@ -26,7 +26,7 @@ Once everything is hardwired (there can be questions over connecting staff, feel
 
 ### Install Megapi npm package
 	npm install megapi
-Insert the initial code for starting MegaPi first.
+An example MegaPi code
 
 	var MegaPi = require("megapi").MegaPi;
 	var bot = new MegaPi("/dev/ttyS0", onStart); //"/dev/ttyAMA0" for rpi2, "/dev/ttyS0" for rpi3, "/dev/ttyUSB0" for USB port
@@ -36,6 +36,7 @@ Insert the initial code for starting MegaPi first.
 	}
 	var level = 0;
 	function loop(){
+	//do whatever PWM write function you want
   		bot.digitalWrite(13, level);
   		level = 1-level;
   		setTimeout(loop,500);
