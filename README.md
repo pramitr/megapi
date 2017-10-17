@@ -8,7 +8,7 @@ Currently my robot has a simple and not so accurate arm with 3 DOF, 4 wheels to 
 
 ## Setup process
 
-It requires Raspberry Pi  (I use 3B), Arduino (I have used MegaPi), 4 encoder motors, motor drivers.
+It requires Raspberry Pi  (I use 3B), Arduino (I have used a variant of [Arduino Mega 2560](https://store.arduino.cc/usa/arduino-mega-2560-rev3) built by Makeblock named as [MegaPi](http://learn.makeblock.com/en/megapi/)), 4 encoder motors, motor drivers.
 For robotic arm I have used one robotic arm from Makeblock which has one simple DC motor, also I have used Me Ultrasonic sensor and Raspberry Pi camera module (camera module code not ready yet in this repo).
 
 If you are familiar with Arduino, thats great! If not, it comes with variety of features to learn about. So let me know what your project interest is and I can give you appropriate guiding links.
