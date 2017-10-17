@@ -12,8 +12,9 @@ It requires Raspberry Pi  (I use 3B), Arduino (I have used a variant of [Arduino
 For robotic arm I have used one robotic arm from Makeblock which has one simple DC motor, also I have used Me Ultrasonic sensor and Raspberry Pi camera module (camera module code not ready yet in this repo).
 
 There are many other ways of implementing motor controllers. Some of my favorites are
-	Beaglebone Black
-	Raspberry Pi with Expanders like MCP23017, MCP23008, PCF8574, PCF8574A, PCF8575, PCA9685, PCF8591, MUXSHIELD2, GROVEPI, 74HC595, SN74HC595, CD74HC4067
+* Beaglebone Black
+* Raspberry Pi with Expanders like MCP23017, MCP23008, PCF8574, PCF8574A, PCF8575, PCA9685, PCF8591, MUXSHIELD2, GROVEPI, 74HC595, SN74HC595, CD74HC4067
+* Arduino Uno
 	
 For now I am using [MegaPi NodeJS API](https://github.com/Makeblock-official/NodeForMegaPi) here because I thought they have a growing community but it seems they do not maintain the APIs actively and I am already facing bugs so pretty soon I might want to change that to [Jhonny Five](http://johnny-five.io/)
 	
