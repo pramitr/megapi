@@ -11,6 +11,13 @@ Currently my robot has a simple and not so accurate arm with 3 DOF, 4 wheels to 
 It requires Raspberry Pi  (I use 3B), Arduino (I have used a variant of [Arduino Mega 2560](https://store.arduino.cc/usa/arduino-mega-2560-rev3) built by Makeblock named as [MegaPi](http://learn.makeblock.com/en/megapi/)), 4 encoder motors, motor drivers.
 For robotic arm I have used one robotic arm from Makeblock which has one simple DC motor, also I have used Me Ultrasonic sensor and Raspberry Pi camera module (camera module code not ready yet in this repo).
 
+There are many other ways of implementing motor controllers. Some of my favorites are
+	Beaglebone Black
+	Raspberry Pi with Expanders like MCP23017, MCP23008, PCF8574, PCF8574A, PCF8575, PCA9685, PCF8591, MUXSHIELD2, GROVEPI, 74HC595, SN74HC595, CD74HC4067
+	
+For now I am using [MegaPi NodeJS API](https://github.com/Makeblock-official/NodeForMegaPi) here because I thought they have a growing community but it seems they do not maintain the APIs actively and I am already facing bugs so pretty soon I might want to change that to [Jhonny Five](http://johnny-five.io/)
+	
+
 If you are familiar with Arduino, thats great! If not, it comes with variety of features to learn about. So let me know what your project interest is and I can give you appropriate guiding links.
 Once everything is hardwired (there can be questions over connecting staff, feel free to ask, I have used MegaPi USB port to connect to RPi because I wanted to use the bluetooth and data at the same time, besides Im not a fan of soldering myself so no serial port yet, if I find it required to do, I will update here), below is the programming part with software in Raspberry Pi.
 
